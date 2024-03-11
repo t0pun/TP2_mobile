@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/directionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="105dp"
+        tools:ignore="MissingConstraints"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/flecheGauche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        tools:ignore="MissingConstraints"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/flecheDroite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_forward_24"
+        tools:ignore="MissingConstraints"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/flecheHaut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_upward_24"
+        tools:ignore="MissingConstraints"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/flecheBas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_downward_24"
+        tools:ignore="MissingConstraints"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/buttonDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
