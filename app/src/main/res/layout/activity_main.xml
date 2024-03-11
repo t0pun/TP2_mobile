@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/boutonCapteurAbsent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capteur absent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/boutonCapteur"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <Button
+        android:id="@+id/boutonCapteur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capteur"
+        app:layout_constraintTop_toBottomOf="@+id/boutonCapteurAbsent"
+        app:layout_constraintBottom_toTopOf="@+id/boutonAccelerometre"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <Button
+        android:id="@+id/boutonAccelerometre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accelerometre"
+        app:layout_constraintTop_toBottomOf="@+id/boutonCapteur"
+        app:layout_constraintBottom_toTopOf="@+id/boutonDirection"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <Button
+        android:id="@+id/boutonDirection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direction"
+        app:layout_constraintTop_toBottomOf="@+id/boutonAccelerometre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
